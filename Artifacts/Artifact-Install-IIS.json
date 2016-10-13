@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
-    "title": "Run PowerShell",
+    "title": "Install IIS",
     "description": "Use this to run a script using PowerShell",
     "publisher": "Microsoft",
     "tags": [
-        "PowerShell"
+        "IIS"
     ],
     "iconUri": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/Artifacts/windows-run-powershell/powershell.png",
     "targetOsType": "Windows",
@@ -12,18 +12,7 @@
         "scriptFileUris": {
             "type": "array",
             "displayName": "File URI(s)",
-            "description": "All the files to download to the VM for script execution. To specify multiple files, format them as a JSON array (e.g. [\"file1\", \"file2\"])."
-        },
-        "scriptToRun": {
-            "type": "string",
-            "displayName": "Script to Run",
-            "description": "Script file to run."
-        },
-        "scriptArguments": {
-            "type": "string",
-            "displayName": "Script Arguments",
-            "description": "Arguments to pass to the script.",
-            "allowEmpty": true
+            "description": "Install IIS on Windows Server"
         }
     },
     "runAzureVMExtension": {
