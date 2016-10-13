@@ -36,7 +36,8 @@
             "commandToExecute": ""
         },
         "protectedSettings": {
-            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File', ' ', parameters('scriptToRun'), ' ', parameters('scriptArguments'))]"
+            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -Command "import-module servermanager
+add-windowsfeature web-server -includeallsubfeature")]"
         }
     }
 }
